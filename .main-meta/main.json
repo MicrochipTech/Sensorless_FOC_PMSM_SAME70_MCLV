@@ -1,0 +1,50 @@
+{
+   "metaDataVersion":"1.0.0",
+   "category":"com.microchip.matlab.project",
+   "content":{
+      "metaDataVersion":"1.0.0",
+      "name":"com.microchip.matlab.project.Sensorless_FOC_PMSM_SAME70_MCLV",
+      "version":"1.0.0",
+      "displayName":"MATLAB-Simulink model for Sensorless PMSM FOC Control using ATSAME70Q21B",
+      "projectName":"Sensorless_FOC_PMSM_SAME70_MCLV",
+      "shortDescription":"MATLAB-Simulink model for Sensorless PMSM FOC Control using ATSAME70Q21B",
+	  "simulationTool":{
+         "name":"MATLAB/Simulink",
+         "semverRange":">=2022"
+      },
+	  "addonPackages":[
+				"MATLAB add on packages",
+				"Simulink",
+				"MPLAB Device blocks for Simulink",
+				"Motor Control Blockset",
+				"Embedded Coder",
+				"Fixed-Point Designer"
+      ],
+      "compiler":{
+			"name": "XC32",
+			"semverRange": ">=4.00.0"
+      },
+      "dfp":{
+			"name": "SAME70_DFP",
+			"semverRange": "^4.6.98"
+      },
+      "device":{
+		 "metaDataVersion": "1.0.0",
+		 "category": "com.microchip.portal.contentRef",
+		 "content": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.device",
+			"name": "ATSAME70Q21B",
+			"versionRange": "*"
+		}
+      },
+      "keywords":[
+         "Motor Control",
+		 "FOC",
+		 "ADC",
+		 "PWM"
+		 "PMSM",
+		 "ATSAME70Q21B",
+      ]
+   }
+}
