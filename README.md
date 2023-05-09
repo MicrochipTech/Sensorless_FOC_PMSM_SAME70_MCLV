@@ -26,6 +26,11 @@ The ZIP package that you downloaded from the GITHUB® repository, includes the f
 | mcb_microchip_pmsm_foc_sensorless_host_SAME70.slx     |   Host model                           |
 |||
 
+Refer to the following links for release notes and licensing information.
+
+ - [Release Notes](./release_notes.md)
+ - [License](license.md)
+ 
 ## Software Tools Used for Testing the MATLAB/Simulink Model
 1.	MPLAB X IDE and IPE  (v6.0 or later)
 2.	XC32 compiler (v4.0 or later)
@@ -61,31 +66,31 @@ The ZIP package that you downloaded from the GITHUB® repository, includes the f
 1. <p style='text-align: justify;'> 1	Connect the ATSAME70Q21 Plug-In-Module (PIM) and External Op-Amp matrix board to the MCLV-2 motor control board.</p>
 
     <p align="left" >
-    <img  src="images/PIM.png"></p>
+    <img  src="images/PIM.jpg"></p>
     <p align="left" >
-    <img  src="images/ExtOp_amp.png"></p>
+    <img  src="images/ExtOp_amp.jpg"></p>
 
 
 2. <p style='text-align: justify;'> Plug in the 24V power supply to connector J1 provided on the MCLV-2 Board. Al-ternatively, the Inverter Board can also be powered through Connector J2.</p>
 
     <p align="left" >
-    <img  src="images/24V_Power_Supply.png"></p>
+    <img  src="images/24V_Power_Supply.jpg"></p>
 
 3. <p style='text-align: justify;'> Keep the jumper connections of JP1, JP2, and JP3 at Current position.</p>
 
     <p align="left" >
-    <img  src="images/Jumper_Connt.png"></p>
+    <img  src="images/Jumper_Connt.jpg"></p>
 
 4. <p style='text-align: justify;'> Motor Phase connections,  Connect White, Black, Red coloured wires coming from P1 header of motor to M1, M2, M3 respectively of J7 header on MCLV2.</p>
 
     <p align="left" >
-    <img  src="images/Motor_PhaseConnect.png"></p>
+    <img  src="images/Motor_PhaseConnect.jpg"></p>
 
 
 5. <p style='text-align: justify;'>  Connect the MPLAB® ICD4™  and adaptor board to ATSAME70Q21 PIM on the MCLV2 board.</p>
 
     <p align="left" >
-    <img  src="images/ICD4.png"></p>
+    <img  src="images/ICD4.jpg"></p>
 
 
 
@@ -96,42 +101,42 @@ The ZIP package that you downloaded from the GITHUB® repository, includes the f
 2. Open the folder dowmloaded from the repository, in which MATLAB files are saveds.
 
     <p align="left" >
-    <img  src="images/pic1.png"></p>
+    <img  src="images/pic1.jpg"></p>
 
 3.	<p style='text-align: justify;'> Double click and open the .m file. This .m file contains the configuration parameter for the motor and board. By default, the .m file is configured to run Hurst 300 motor and MCLV-2 board. </p>
 
     <p align="left">
-      <img  src="images/pic10.png"></p>
+      <img  src="images/pic10.jpg"></p>
     </p>
 
 4.	<p style='text-align: justify;'>Open the Simulink model and Click on the <b>"Run"</b> icon to start the simulation.
 
     <p align="left">
-      <img  src="images/pic2.png"></p>
+      <img  src="images/pic2.jpg"></p>
     </p>
 
 5.	<p style='text-align: justify;'>To plot the simulation result, <b>Data Inspector</b> is used (refer to figure below). To observe the additional signals, log them as required. Alternatively, normal Simulink Scope can be used to plot the signals.
 
     <p align="left">
-      <img  src="images/pic3.png"></p>
+      <img  src="images/pic3.jpg"></p>
     </p>
 
 6.	<p style='text-align: justify;'>From this Simulink model an MPLAB X project can be generated, and it can be used to run the PMSM motor using MCLV-2 board. <p style='text-align: justify;'>To generate the code from the Simulink model, go to the <b>"MICROCHIP"</b> tab, and enable the tabs shown in the figure below. 
 
     <p align="left">
-      <img  src="images/pic4.png"></p>
+      <img  src="images/pic4.jpg"></p>
     </p>
 
 7.	<p style='text-align: justify;'>	To generate the code and run the motor, click on <b>Apps</b>  tab and then click <b> Embedded coader</b>.
 
     <p align="left">
-      <img  src="images/pic5.png"></p>
+      <img  src="images/pic5.jpg"></p>
     </p>
 
 8.	<p style='text-align: justify;'>	The C Code tab appears on the menu bar. Click <b> C Code > Build </b> to build, generate, and flash the code. This will generate the MPLAB X project from the Simulink model and program the ATSAME70Q21 device.
 
     <p align="left">
-      <img  src="images/pic6.png"></p>
+      <img  src="images/pic6.jpg"></p>
     </p>
 
 9.	<p style='text-align: justify;'>After completing the process, the <b>‘Operation Succeeded’</b> message will be displayed on the <b>‘Diagnostics Viewer’</b>.
@@ -151,17 +156,17 @@ The ZIP package that you downloaded from the GITHUB® repository, includes the f
 2. <p style='text-align: justify;'>Open the MCB Host model and double click on the <b> Host Serial Setup block </b>. Then select the appropriate COM port connected to the hardware from the drop-down menu. Open the <b> Host Serial Receive</b> and <b>Host Serial Transmit</b> blocks under <b>Serial Communication</b> subsystem and update the appropriate COM port.
 
     <p align="left">
-      <img  src="images/pic7.png"></p>
+      <img  src="images/pic7.jpg"></p>
     
     <p align="left">
-      <img  src="images/pic8.png"></p>
+      <img  src="images/pic8.jpg"></p>
     </p>
 
 
 3.	<p style='text-align: justify;'>Click the run icon of the MCB Host model to start communication with the target device and monitor the signals.
 
     <p align="left">
-      <img  src="images/pic9.png"></p>
+      <img  src="images/pic9.jpg"></p>
     </p>  
 
 4.	<p style='text-align: justify;'>	Update the Reference Speed [RPM] value in the host model.	Use the Motor switch available in the host model to start running the motor.</p>   
@@ -169,5 +174,13 @@ The ZIP package that you downloaded from the GITHUB® repository, includes the f
 5.	<p style='text-align: justify;'> Use the Scope available in the host model to view the debug signals received from the target model running the motor. In the figure below, one example is shown where two signals (estimated and reference speeds) have been plotted.
 
     <p align="left">
-      <img  src="images/pic11.png"></p>
+      <img  src="images/pic11.jpg" width="700" height="300"></p>
     </p>
+## 	REFERENCES:
+For more information, refer to the following documents or links.
+
+1.	dsPICDEM MCLV-2  Board User’s Guide ([DS52080A](https://ww1.microchip.com/downloads/en/DeviceDoc/DS-52080a.pdf)) 
+2.	[MPLAB® X IDE installation](https://microchipdeveloper.com/mplabx:installation)
+3.	[MPLAB® XC32 Compiler installation](https://microchipdeveloper.com/mplabx:installation)
+4.  [Motor Control Blockset](https://in.mathworks.com/help/mcb/)
+5.  [MPLAB Device Blocks for Simulink :dsPIC, PIC32 and SAM mcu](https://in.mathworks.com/matlabcentral/fileexchange/71892-mplab-device-blocks-for-simulink-dspic-pic32-and-sam-mcu)  
