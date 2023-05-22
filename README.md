@@ -48,12 +48,12 @@ Refer to the following links for release notes and licensing information.
 >The software used for testing the model during release is listed above. It is recommended to use the version listed above or later versions for building the model.
 
 ## Hardware Tools Required for the Demonstration
-- MCLV-2 Development Board with EXTERNAL op-amp matrix board ([(DM330021-2](https://www.microchipdirect.com/product/DM330021-2))
+- MCLV-2 Development Board with EXTERNAL op-amp matrix board ([DM330021-2](https://www.microchipdirect.com/product/DM330021-2))
 - ATSAME70Q21 Motor Control Plug-In-Module ([MA320203](https://www.microchipdirect.com/product/MA320203))
 - 24V Power Supply ([AC002013](https://www.microchipdirect.com/dev-tools/AC002013)) 
 - 24V, 3-Phase Brushless DC Permanent Magnet Hurst Motor ([AC300022](https://www.microchip.com/en-us/development-tool/AC300022))
 - ICD 4 In-Circuit Debugger ([DV164045](https://www.microchipdirect.com/product/DV164045)) or PICkit 4 In-Circuit Debugger ([PG164140](https://www.microchipdirect.com/dev-tools/PG164140))
-- Debugger Adapter Board for MPLAB ICD4 ([(AC102015](https://www.microchipdirect.com/product/AC102015))
+- Debugger Adapter Board for MPLAB ICD4 ([AC102015](https://www.microchipdirect.com/product/AC102015))
 - FTDI cable / FT232RL FTDI USB to UART
 
 > **_NOTE:_**
